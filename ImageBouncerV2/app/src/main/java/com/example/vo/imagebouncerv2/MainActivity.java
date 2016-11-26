@@ -58,33 +58,33 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void uploadImage(View v){
+        if(bitmap!=null) {
+            AsyncTask changeImage = new AsyncTask<Bitmap, Void, Bitmap>() {
+                @Override
+                protected Bitmap doInBackground(Bitmap... params) {
+                    String encodedImageString = encodeImage(params[0]);
+                    connection.sendLine("newImage " + encodedImageString);
+                    System.out.println("Finished sending encoded image.");
 
-        AsyncTask changeImage = new AsyncTask<Bitmap,Void,Bitmap>() {
-            @Override
-            protected Bitmap doInBackground(Bitmap... params) {
-                String encodedImageString = encodeImage(params[0]);
-                connection.sendLine("newImage " +encodedImageString);
-                System.out.println("Finished sending encoded image.");
 
-
-                connection.sendLine(" endOfImageStream ");
-                if(connection.sendLine(" endOfImageStream ")) {
-                    System.out.println("Sent end of stream signal.");
-                } else {
-                    System.out.println("Couldn't send end of stream signal.");
+                    connection.sendLine(" endOfImageStream ");
+                    if (connection.sendLine(" endOfImageStream ")) {
+                        System.out.println("Sent end of stream signal.");
+                    } else {
+                        System.out.println("Couldn't send end of stream signal.");
+                    }
+                    return null;
                 }
-                return null;
-            }
 
-            protected void onPostExecution(Bitmap s) {
+                protected void onPostExecution(Bitmap s) {
 
-            }
+                }
 
 
-        };
-        Bitmap[] params = {bitmap};
-        changeImage.execute(params);
-
+            };
+            Bitmap[] params = {bitmap};
+            changeImage.execute(params);
+        }
     }
 
     public void setImageFromString(String newImageString){
