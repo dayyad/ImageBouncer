@@ -2,6 +2,7 @@ package com.example.jerem.imagebouncer;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.graphics.Bitmap;
@@ -40,6 +41,34 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    //Android doesn't allow calls to a socket directly from the main class as it techincally is blocking the main class
+    //while perfomring operations on networ, therefore they need to be done asyncronously via the following class
+    //USE this class to call all methods that would be called on the connection class.
+    private void performNetworkOperation(final String key) {
+        final String asyncTaksKey = key;
+
+        AsyncTask newTask = new AsyncTask() {
+
+            @Override
+            protected Object doInBackground(Object[] objects) {
+                System.out.println(key);
+                if(key.equals("submitImage")){
+                    connection.submitImage(byte_array);
+                } else if(key.equals("getNewImage")){
+                    connection.getNewImage();
+                } else if(key.equals("upVote")){
+                    //TODO
+                } else if(key.equals("downVote")){
+                    //TODO
+                }
+
+                return null;
+            }
+        };
+
+        newTask.execute();
+    }
+
     public void setByte_array(byte[] b) {
         System.out.println("trying to change byte array");
         this.byte_array = b;
@@ -51,7 +80,32 @@ public class MainActivity extends AppCompatActivity {
     public void bumpImage(View v) {
         System.out.println("requesting new image");
 
-        connection.getNewImage();
+        AsyncTask myTask = new AsyncTask() {
+            @Override
+            protected Object doInBackground(Object[] objects) {
+                InputStream in = null;
+                try {
+                    in = new java.net.URL("128.199.236.107/1.jpg").openStream();
+
+                    Bitmap bmp = BitmapFactory.decodeStream(in);
+
+                    ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                    bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
+                    byte[] byteArray = stream.toByteArray();
+
+                    setByte_array(byteArray);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                return null;
+            }
+        };
+        myTask.execute();
+
+
+
+       // performNetworkOperation("getNewImage");
     }
 
     // The function DIRECTLY called by clicking the button "upload". It calls the intent, (which is basically what I imagine as the external call to open the gallery. It relies on another function
@@ -66,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void voteSuccess(boolean success){
-
+        //TODO
     }
 
     // Takes an input stream, converts it into a bitmap, and updates the image
@@ -91,8 +145,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //Called after image is selected, previously was in the updateImage method but this caused infinite loop.
     public void finishUploadingImage(){
-        connection.submitImage(byte_array);
+        performNetworkOperation("submitImage");
     }
 
     // This is a GENERAL function which is called when an activity is resolved. At the moment, it only does something meaningful when the PICK_PHOTO_FOR_AVATAR activity is resolved, but could

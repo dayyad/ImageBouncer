@@ -67,16 +67,17 @@ public class connectionClientSide extends Thread {
     private class serverConnection extends Thread { //Listen to specific client while socket is open, deals with any client input.
         Socket serverSocket;
         ObjectOutputStream oos;
+        ObjectInputStream ois;
 
         public boolean getNewImage() {
             if (connection != null) {
-                connection.sendToServer("getImage");
+
                 try {
+                    connection.sendToServer("getImage");
                     InetAddress ip = InetAddress.getLocalHost();
                     NetworkInterface macAddress = NetworkInterface.getByInetAddress(ip);
                     byte[] macBytes = macAddress.getHardwareAddress();
                     oos.writeObject(macBytes);
-                    oos.close();
 
                 } catch (UnknownHostException e) {
                     e.printStackTrace();
@@ -92,12 +93,6 @@ public class connectionClientSide extends Thread {
 
         public serverConnection(Socket serverSocket) {
             this.serverSocket = serverSocket;
-
-            try {
-                oos = new ObjectOutputStream(serverSocket.getOutputStream());
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
 
         }
 
@@ -122,34 +117,14 @@ public class connectionClientSide extends Thread {
                 client.voteSuccess(lineScanner.nextInt() == 1);
 
             } else if (key.equals("newImage")) {
-                ByteArrayOutputStream baos = new ByteArrayOutputStream();
-                currentImage = lineScanner.nextInt();
-                InputStream is = null;
-                URL url = null;
-                System.out.println("Trying to download new image from URL.");
                 try {
-                    url = new URL(serverIP + "/" + Integer.toString(currentImage));
-                    is = url.openStream();
-                    byte[] byteChunk = new byte[4096]; // Or whatever size you want to read in at a time.
-                    int n;
+                    client.setByte_array((byte[]) ois.readObject());
 
-                    while ((n = is.read(byteChunk)) > 0) {
-                        baos.write(byteChunk, 0, n);
-                    }
                 } catch (IOException e) {
-                    System.err.printf("Failed while reading bytes from %s: %s", url.toExternalForm(), e.getMessage());
                     e.printStackTrace();
-                    // Perform any other exception handling that's appropriate.
-                } finally {
-                    if (is != null) try {
-                        is.close();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
                 }
-
-                client.setByte_array(baos.toByteArray());
-
             }
 
         }
@@ -167,15 +142,16 @@ public class connectionClientSide extends Thread {
 
         public void run() {
             try {
-                Scanner inputScanner = new Scanner(serverSocket.getInputStream());
+                oos = new ObjectOutputStream(serverSocket.getOutputStream());
+                ois = new ObjectInputStream(serverSocket.getInputStream());
 
-                while (!serverSocket.isClosed()) {
-                    if (inputScanner.hasNextLine()) {
-                        processInputLine(inputScanner.nextLine());
-                    }
+                while (true) {
+                    System.out.println("read one line.");
+                    processInputLine((String) ois.readObject());
                 }
-
             } catch (IOException e) {
+                e.printStackTrace();
+            } catch (ClassNotFoundException e) {
                 e.printStackTrace();
             }
         }

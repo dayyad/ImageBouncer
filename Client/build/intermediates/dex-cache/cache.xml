@@ -3,48 +3,111 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.1\jars\classes.jar"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\libs\internal_impl-25.0.1.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
-        <dex dex="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.0.1_85aa0c2e22081a3bc29a34920a5613698a26b477.jar" />
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_d54ff0051d4527780a14d9bfd7517cd58e000768.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_d54ff0051d4527780a14d9bfd7517cd58e000768\classes.dex" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\classes.jar"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
-        <dex dex="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.0.1_64c7657324140e38081f1cd7bdd8dd69b0be8c48.jar" />
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_36a842d043cbc23a0edd583d4bc8be00061a1af8.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_36a842d043cbc23a0edd583d4bc8be00061a1af8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Program Files\Android\Android Studio\gradle\m2repository\commons-io\commons-io\2.4\commons-io-2.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\transforms\dex\debug\folders\1000\10\commons-io-2.4_b2955a73e8fdec69863902c786dced8321b28c5c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.0.1_effeab178e2c5ac6341263fb0eb64968914c2e80\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\transition\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.0.1_4a6f191fe2d542a4e44f31cf4345bdd39c68b62a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.0.1_ce869a4ee0d1d6152e005a2057ee20f5d8c8c649\classes.dex" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\classes.jar"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
-        <dex dex="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.0.1_e6d5ee1dcf38495e261a7b63392353e7744c57e6.jar" />
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.0.1_4e00a58e2bb53daccc715a9cb1fb2bf0a7b75c50.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\transition\25.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
-        <dex dex="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_76d9124d52bf909bb0131e47a0ae3f3c97bdd5d7.jar" />
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\pre-dexed\debug\com.android.support-transition-25.0.1_4a6f191fe2d542a4e44f31cf4345bdd39c68b62a.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.0.1_4e00a58e2bb53daccc715a9cb1fb2bf0a7b75c50\classes.dex" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\classes.jar"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
-        <dex dex="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.0.1_684a112955a2a6de37da32b86f4222736a4320a1.jar" />
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-25.0.1_effeab178e2c5ac6341263fb0eb64968914c2e80.jar" />
     </item>
     <item
         is-multidex="false"
@@ -53,97 +116,196 @@
         optimize="true"
         revision="25.0.0"
         sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
-        <dex dex="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\pre-dexed\debug\support-annotations-25.0.1_37f814689d42413387fd4563671b842d52659249.jar" />
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\pre-dexed\debug\support-annotations-25.0.1_37f814689d42413387fd4563671b842d52659249.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.1\jars\classes.jar"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
-        <dex dex="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.0.1_3033818a5700c0c2f9369aa649863e88d631ebdd.jar" />
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.0.1_ce869a4ee0d1d6152e005a2057ee20f5d8c8c649.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vo\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.1\support-annotations-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.0.1_37f814689d42413387fd4563671b842d52659249\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.0.1_8064b60e69cfb61e434922cca1958b2d0018ffc3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c0142ffad11c7b32bb7a1200d5532b5784c8700e">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_84fd646cd117c9ddbde7e262e602b289fced9198\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a987a1752d8f4051b2dae4fb4c7a7b343eafd1ee">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_bf10be2a98e63845e1075af518ea41a2cf1fde60\classes.dex" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_0a451b21cd13d5f56d0938002bcf0a1654c5f04e.jar" />
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.0.1_8064b60e69cfb61e434922cca1958b2d0018ffc3.jar" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\design\25.0.1\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
-        <dex dex="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.0.1_a61d2bd53c0666232bb48f060c31984c4ad4e723.jar" />
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.0.1_72aa72083d4cd6c8161615348b8c4a9d98ecec36\classes.dex" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
-        <dex dex="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.0.1_d1614d614172c3ae9bd2e8396ca1c2933744d258.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f83b00041ecfba705603fec40363416c7de69719">
-        <dex dex="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_538380ca094145d19afdbaca6ba90f7b057d37e5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
-        <dex dex="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-25.0.1_47ecf828b81529ab12e4001cb29d8cec980921a2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\exploded-aar\com.android.support\design\25.0.1\jars\classes.jar"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\design\25.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
-        <dex dex="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\pre-dexed\debug\com.android.support-design-25.0.1_3e64e25aa6a83be51703af9392a00f44f06b789f.jar" />
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\pre-dexed\debug\com.android.support-design-25.0.1_72aa72083d4cd6c8161615348b8c4a9d98ecec36.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.0.1_b8da4f0fd0ee800c267f4bc57d63bd74b9a9e353\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_7e12b3bf5d6c2f1d79c75e8cae77f1f02a4f232c\classes.dex" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.1\jars\classes.jar"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_7e12b3bf5d6c2f1d79c75e8cae77f1f02a4f232c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.0.1_b8da4f0fd0ee800c267f4bc57d63bd74b9a9e353.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
-        <dex dex="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.0.1_6d0081ca2e1545bcd96bdd10fe7421a5f0e4657c.jar" />
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.0.1_9a866ccd348237e828f951ebe75fef8c5e5db695.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_a6d188b231fb14ea64ded4d72d517e1f090590ed\classes.dex" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
-        <dex dex="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_3a7e04272db0ff19941bc1ed505104e7f035d1d1.jar" />
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.0.1_e95908bf5e2ab5e9a57f08c471c5c72158c4a847.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.0.1_9a866ccd348237e828f951ebe75fef8c5e5db695\classes.dex" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\exploded-aar\com.android.support\transition\25.0.1\jars\classes.jar"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\libs\internal_impl-25.0.1.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
-        <dex dex="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\pre-dexed\debug\com.android.support-transition-25.0.1_02152f1e5a3aea49dc1f73229431ffeb57ae75e4.jar" />
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_42bc1d84a23a08a2db5577a1c58f6e030a9285a7.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.0.1_8ede2a10e6dc7ab0aa184ac72660e60e89443ada\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.0.1_e95908bf5e2ab5e9a57f08c471c5c72158c4a847\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_42bc1d84a23a08a2db5577a1c58f6e030a9285a7\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.0.1_8ede2a10e6dc7ab0aa184ac72660e60e89443ada.jar" />
     </item>
     <item
         is-multidex="false"
@@ -152,25 +314,52 @@
         optimize="true"
         revision="25.0.0"
         sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
-        <dex dex="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\pre-dexed\debug\commons-io-2.4_b2955a73e8fdec69863902c786dced8321b28c5c.jar" />
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\pre-dexed\debug\commons-io-2.4_b2955a73e8fdec69863902c786dced8321b28c5c.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
-        <dex dex="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_a877c81df2479d69aef1580428fadcabea8ccb5d.jar" />
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.0.1_ea5374a87e2ca6deefee08ec1cf8d850554b3f5e.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.1\jars\classes.jar"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\Vo\Downloads\ImageBouncer\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.0.1_fbb866c73b4246bef2170d26fea09856bcf51883.jar" />
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.0.1_35198958b93a31ce7a56d977bc38073e0ec6d16b.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.0.1_ea5374a87e2ca6deefee08ec1cf8d850554b3f5e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.0.1_35198958b93a31ce7a56d977bc38073e0ec6d16b\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="C:\Users\Vo\Documents\GitHub\ImageBouncer\Client\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_a6d188b231fb14ea64ded4d72d517e1f090590ed.jar" />
     </item>
 
 </items>
