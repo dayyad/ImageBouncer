@@ -1,5 +1,6 @@
 package com.example.vo.imagebouncerv2;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -20,6 +21,10 @@ public class MainActivity extends AppCompatActivity {
     ImageView imageView;
     Bitmap bitmap;
     Uri filePath;
+    Activity myActiv;
+
+    String imageScore;
+    String imageTitle;
 
     Connection connection;
 
@@ -27,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        myActiv = this;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         imageView = (ImageView) findViewById(R.id.imageView);
@@ -95,11 +101,19 @@ public class MainActivity extends AppCompatActivity {
         };
         task.execute(params);
 
-        TextView imageTitleText = (TextView) findViewById(R.id.imageTitleText);
-        TextView imageDetailsText = (TextView) findViewById(R.id.imageDetailsText);
+        imageScore = score;
+        imageTitle = title;
 
-        imageTitleText.setText(title);
-        imageDetailsText.setText("Score: "+score);
+        myActiv.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                TextView imageTitleText = (TextView) findViewById(R.id.imageTitleText);
+                TextView imageDetailsText = (TextView) findViewById(R.id.imageScoreText);
+
+                imageTitleText.setText(imageTitle);
+                imageDetailsText.setText("Score: "+imageScore);
+            }
+        });
     }
 
     public void setImageBitmap(Bitmap bitmap){
