@@ -13,11 +13,13 @@ public class Connection extends Thread{
     Scanner scanner;
     PrintWriter PW;
     Socket socket;
+    String currentImageId;
+
+
 
     public Connection(MainActivity mainActivity) {
         client = mainActivity;
         System.out.println("Trying to start new clinet.");
-
     }
 
     public void run(){
@@ -43,7 +45,12 @@ public class Connection extends Thread{
             System.out.println("Received Message with key: " + key);
 
             if(key.equals("newImage")){
+                // newImage id title score imageString
                 String buffer ="";
+                String currentImageId = scanner.next();
+                String title = scanner.next();
+                String score = scanner.next();
+
                 boolean done = false;
                 while(!done && scanner.hasNext()){
                     String next = scanner.next();
@@ -56,7 +63,7 @@ public class Connection extends Thread{
                     }
                 }
                 System.out.println("Total image received size: " + buffer.length());
-                client.setImageFromString(buffer);
+                client.setImageFromString(title,score,buffer);
 
             }
         }

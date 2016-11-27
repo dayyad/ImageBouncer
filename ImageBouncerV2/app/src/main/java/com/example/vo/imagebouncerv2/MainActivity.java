@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Base64;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
@@ -34,12 +35,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void selectImage(View v){
-//        Intent intent = new Intent();
-//        intent.setType("image/*");
-//        intent.setAction(Intent.ACTION_GET_CONTENT);
-//        startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE_REQUEST);
-
-
         Intent upload_intent = new Intent(Intent.ACTION_GET_CONTENT);
         upload_intent.setType("image/*");
         startActivityForResult(upload_intent, PICK_IMAGE_REQUEST);
@@ -63,9 +58,8 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 protected Bitmap doInBackground(Bitmap... params) {
                     String encodedImageString = encodeImage(params[0]);
-                    connection.sendLine("newImage " + encodedImageString);
+                    connection.sendLine("newImage " + " TESTNAME " +encodedImageString);
                     System.out.println("Finished sending encoded image.");
-
 
                     connection.sendLine(" endOfImageStream ");
                     if (connection.sendLine(" endOfImageStream ")) {
@@ -79,15 +73,13 @@ public class MainActivity extends AppCompatActivity {
                 protected void onPostExecution(Bitmap s) {
 
                 }
-
-
             };
             Bitmap[] params = {bitmap};
             changeImage.execute(params);
         }
     }
 
-    public void setImageFromString(String newImageString){
+    public void setImageFromString(String title, String score, String newImageString){
         String[] params = {newImageString};
         AsyncTask task = new AsyncTask<String,Void,Bitmap>() {
             @Override
@@ -102,6 +94,12 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         task.execute(params);
+
+        TextView imageTitleText = (TextView) findViewById(R.id.imageTitleText);
+        TextView imageDetailsText = (TextView) findViewById(R.id.imageDetailsText);
+
+        imageTitleText.setText(title);
+        imageDetailsText.setText("Score: "+score);
     }
 
     public void setImageBitmap(Bitmap bitmap){
