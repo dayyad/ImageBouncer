@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     Uri filePath;
     Activity myActiv;
 
+    String imageId;
     String imageScore;
     String imageTitle;
 
@@ -58,21 +59,33 @@ public class MainActivity extends AppCompatActivity {
         task.execute();
     }
 
+    public void exitUploadView(View v){
+        //setContentView(R.layout.activity_main);
+        if(this.bitmap!=null) {
+            setContentView(R.layout.upload);
+        }
+    }
+
     public void uploadImage(View v){
+        if(this.bitmap!=null) {
+           finaliseUpload(v);
+        }
+    }
+
+    public void finaliseUpload(View v){
+       // EditText txtView = (EditText) (findViewById(R.id.submissionTitleText));
+        //String submissionTitle = (String) txtView.getText().toString();
+       // txtView.setText("Enter Submission title:");
+
         if(bitmap!=null) {
-            AsyncTask changeImage = new AsyncTask<Bitmap, Void, Bitmap>() {
+            AsyncTask changeImage = new AsyncTask<Object, Void, Object>() {
                 @Override
-                protected Bitmap doInBackground(Bitmap... params) {
-                    String encodedImageString = encodeImage(params[0]);
-                    connection.sendLine("newImage " + " TESTNAME " +encodedImageString);
+                protected Object doInBackground(Object... params) {
+                    String encodedImageString = encodeImage((Bitmap) (params[0]));
+                    connection.sendLine("newImage " + "InsertMemeTitleHere" +" " +encodedImageString);
                     System.out.println("Finished sending encoded image.");
 
                     connection.sendLine(" endOfImageStream ");
-                    if (connection.sendLine(" endOfImageStream ")) {
-                        System.out.println("Sent end of stream signal.");
-                    } else {
-                        System.out.println("Couldn't send end of stream signal.");
-                    }
                     return null;
                 }
 
@@ -80,12 +93,13 @@ public class MainActivity extends AppCompatActivity {
 
                 }
             };
-            Bitmap[] params = {bitmap};
+            Object[] params = {bitmap};
             changeImage.execute(params);
         }
+
     }
 
-    public void setImageFromString(String title, String score, String newImageString){
+    public void setImageFromString(String id,String title, String score, String newImageString){
         String[] params = {newImageString};
         AsyncTask task = new AsyncTask<String,Void,Bitmap>() {
             @Override
@@ -100,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         task.execute(params);
-
+        imageId = id;
         imageScore = score;
         imageTitle = title;
 
@@ -156,6 +170,14 @@ public class MainActivity extends AppCompatActivity {
             }
 
         }
+    }
+
+    public void upVote(View v){
+        if(imageId!=null){ connection.sendLine("upVote " + imageId);}
+    }
+
+    public void downVote(View v){
+        if(imageId!=null){connection.sendLine("downVote " + imageId);}
     }
 
 }

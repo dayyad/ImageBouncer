@@ -80,7 +80,11 @@ public class Client extends Thread{
 				}
 				System.out.println("Final Size of image buffer: " + buffer.length());
 				server.addImageAsString(name,buffer);
-			}
+				} //else if(key.equals("upVote")){
+//				server.voteImage(scanner.next(), 1);
+//			} else if(key.equals("downVote")){
+//				server.voteImage(scanner.next(), -1);
+//			}
 		}
 	}
 }

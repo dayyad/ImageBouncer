@@ -1,6 +1,8 @@
 package com.example.vo.imagebouncerv2;
 
 
+import android.os.AsyncTask;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.Socket;
@@ -63,27 +65,33 @@ public class Connection extends Thread{
                     }
                 }
                 System.out.println("Total image received size: " + buffer.length());
-                client.setImageFromString(title,score,buffer);
+                client.setImageFromString(currentImageId,title,score,buffer);
 
             }
         }
     }
 
-    public boolean sendLine(String line){
-        try {
-            if(socket!=null) {
-                PW = new PrintWriter(socket.getOutputStream());
-                    PW.write(line);
-                    PW.flush();
-                    return true;
-                } else {
-                    PW.flush();
-                    return false;
+    public void sendLine(String line){
+        AsyncTask sendTask = new AsyncTask<String,String,String>() {
+            @Override
+            protected String doInBackground(String... params) {
+                String line = params[0];
+                try {
+                    if(socket!=null) {
+                        PW = new PrintWriter(socket.getOutputStream());
+                        PW.write(line);
+                        PW.flush();
+                    } else {
+                        PW.flush();
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
                 }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return false;
+                return null;
+            }
+        };
+        String[] params = {line};
+        sendTask.execute(params);
     }
 
 }

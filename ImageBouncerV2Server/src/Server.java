@@ -36,7 +36,7 @@ public class Server {
 		images = new ArrayList<String>();
 		try {
 			System.out.println("Connecting...");
-			
+			con = DriverManager.getConnection(sqlHost,sqlUser,sqlPass);
 			socket = new ServerSocket(port);
 			while(true){
 				new Client(this,socket.accept());
@@ -45,6 +45,8 @@ public class Server {
 			
 		} catch (IOException e) {
 			e.printStackTrace();
+		} catch (SQLException e) {
+			e.printStackTrace();
 		}
 		
 	}
@@ -52,7 +54,6 @@ public class Server {
 	private ResultSet sqlQuery(String query){
 		try {
 			//Class.forName("com.mysql.jdbc.Driver").newInstance();
-			con = DriverManager.getConnection(sqlHost,sqlUser,sqlPass);
 			stmt = con.createStatement();
 			System.out.println("SQL connected.");
 			return stmt.executeQuery(query+";");
@@ -67,7 +68,6 @@ public class Server {
 		//Class.forName("com.mysql.jdbc.Driver").newInstance();
 	
 		try {
-			con = DriverManager.getConnection(sqlHost,sqlUser,sqlPass);
 			stmt = con.createStatement();
 			System.out.println("SQL connected.");
 			System.out.println("Dispatching sqlExecute: " + command);
@@ -105,6 +105,17 @@ public class Server {
 			if(saveImageToFile(Integer.toString(imageCount),imageString)){
 				sqlExecute("INSERT into images VALUES("+imageCount+",'"+name+"',0 )");
 			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void voteImage(String id, int operation){
+		try {
+			rs = sqlQuery("SELECT * FROM images where image_id="+id);
+			rs.next();
+			int returnValue = rs.getInt(3) + operation;
+			sqlExecute("UPDATE images SET image_score="+returnValue +" WHERE image_id="+id);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
